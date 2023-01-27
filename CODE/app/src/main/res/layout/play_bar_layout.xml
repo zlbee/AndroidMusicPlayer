@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/linearLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/purple_200"
+    android:baselineAligned="true"
+    android:orientation="horizontal"
+    android:theme="@style/Theme.CW2"
+    app:layout_constraintBottom_toBottomOf="parent"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/musicNameTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/music_name_text" />
+
+        <SeekBar
+            android:id="@+id/seekBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:layout_weight="0" />
+
+        <TextView
+            android:id="@+id/progressTextView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="10dp"
+            android:layout_weight="1">
+
+            <Button
+                android:id="@+id/startPlayButton"
+                android:layout_width="@dimen/music_button_size"
+                android:layout_height="@dimen/music_button_size"
+                android:layout_gravity="end"
+                android:background="@drawable/play_icon"
+                android:onClick="startPlay" />
+
+            <Button
+                android:id="@+id/pausePlayButton"
+                android:layout_width="@dimen/music_button_size"
+                android:layout_height="@dimen/music_button_size"
+                android:background="@drawable/pause_icon"
+                android:onClick="pausePlay" />
+
+            <Button
+                android:id="@+id/stopPlayButton"
+                android:layout_width="@dimen/music_button_size"
+                android:layout_height="@dimen/music_button_size"
+                android:background="@drawable/stop_music_icon"
+                android:onClick="stopPlay" />
+
+            <Button
+                android:id="@+id/restartButton"
+                android:layout_width="@dimen/music_button_size"
+                android:layout_height="@dimen/music_button_size"
+                android:layout_gravity="end"
+                android:background="@drawable/restart_icon"
+                android:onClick="restartPlay" />
+
+            <Button
+                android:id="@+id/selectPrevMusicButton"
+                android:layout_width="@dimen/music_button_size"
+                android:layout_height="@dimen/music_button_size"
+                android:background="@drawable/previous_music_icon"
+                android:onClick="indexToPrevMusic" />
+
+            <Button
+                android:id="@+id/selectNextMusicButton"
+                android:layout_width="@dimen/music_button_size"
+                android:layout_height="@dimen/music_button_size"
+                android:background="@drawable/next_music_icon"
+                android:onClick="indexToNextMusic" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

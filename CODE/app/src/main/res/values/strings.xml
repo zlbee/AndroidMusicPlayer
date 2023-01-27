@@ -1,0 +1,50 @@
+<resources>
+    <string name="app_name">CW2</string>
+
+    <!-- bundle keys -->
+    <string name="music_name_key">1</string>
+    <string name="artist_key">2</string>
+    <string name="url_key">3</string>
+    <string name="db_name">4</string>
+    <string name="music_object_key">5</string>
+    <string name="music_list_key">6</string>
+    <string name="music_progress_key">7</string>
+    <string name="playlist_positions_key">8</string>
+    <string name="table_name_key">9</string>
+
+    <!-- texts -->
+    <string name="music_name_text">music</string>
+    <string name="artist_text">artist</string>
+    <string name="play_list_name_text">playList</string>
+    <string name="view_all_playlists_text">View All PlayLists</string>
+    <string name="create_playlist_text">Create Playlist</string>
+    <string name="delete_playlist_text">Delete Playlist</string>
+    <string name="insert_music_text">Insert Music</string>
+    <string name="delete_music_text">Delete Music</string>
+    <string name="save_return_text"><![CDATA[Save & Return]]></string>
+    <string name="current_playlist_text">Current Playlist: </string>
+    <string name="play_text">Play</string>
+
+    <!-- database keywords -->
+    <string name="db_musicName">musicName</string>
+    <string name="db_artist">artist</string>
+    <string name="db_url">url</string>
+    <string name="db_duration">duration</string>
+
+    <!-- intent action filters -->
+    <string name="play_filter">f1</string>
+    <string name="pause_filter">f2</string>
+    <string name="stop_filter">f3</string>
+    <string name="restart_filter">f4</string>
+    <string name="seek_position_filter">f5</string>
+    <string name="delete_music_filter">f6</string>
+    <string name="insert_music_filter">f7</string>
+    <string name="delete_playlist_filter">f8</string>
+    <string name="play_posted_music_filter">f9</string>
+    <string name="update_current_playlist_filter">00</string>
+    <string name="stop_service_filter">f10</string>
+    <string name="show_current_playlist_text">Current Playlist: No playlist Selected.</string>
+    <string name="clear_selection_text">Clear Selection</string>
+    <string name="current_music_text">Current Music: No music Selected.</string>
+
+</resources>
